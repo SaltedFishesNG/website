@@ -1,0 +1,25 @@
+:root {
+	color-scheme: light dark;
+}
+body {
+	width: 85%;
+	max-width: 75ch;
+	text-align: center;
+	margin: 1rem auto;
+	padding-top: 20px;
+	font-family: monospace;
+}
+hr {
+	border: 0;
+	padding: 1em 0;
+	position: relative;
+	&::before {
+		content: attr(data-content);
+		position: absolute;
+		padding: 0 1ch;
+		line-height: 1px;
+		border: solid;
+		border-width: 0 99vw;
+		transform: translateX(-50%);
+	}
+}
