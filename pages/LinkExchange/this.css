@@ -1,0 +1,37 @@
+.LE {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 0;
+    margin: 0;
+    & a {
+        gap: 1em;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding: 0.5em 0.75em;
+        border: 1px solid light-dark(#0002, #fff2);
+        border-radius: 1em;
+        width: 100%;
+        color: light-dark(#333, #c7c7c7);
+        background-color: light-dark(#f6f8fa, #2c2c2c);
+        transition: box-shadow 0.5s;
+        &:hover {
+            box-shadow: 0 2px 8px light-dark(#0002, #fff2);
+        }
+    }
+    & img {
+        width: 3em;
+        height: 3em;
+        border-radius: 100%;
+    }
+    & span {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 700px) {
+    .LE a {
+        width: calc(45% - 0.5em);
+    }
+}

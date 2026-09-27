@@ -1,0 +1,38 @@
+:root {
+    color-scheme: light dark;
+}
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    color: light-dark(#333333, #c7c7c7);
+    background-color: light-dark(#fff, #1b1b1b);
+    width: 85%;
+    max-width: 75ch;
+    line-height: 1.5;
+    margin: 1em auto;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+p a {
+    color: inherit;
+    display: grid;
+    margin: auto;
+    width: 100%;
+    max-width: 40ch;
+    padding: 1em 0px 1em;
+    border: 1px solid light-dark(#0002, #fff2);
+    border-radius: 1em;
+    background-color: light-dark(#f6f8fa, #2c2c2c);
+    text-decoration: none;
+    transition: box-shadow 0.5s;
+    &:hover {
+        box-shadow: 0 2px 8px light-dark(#0002, #fff2);
+    }
+}
+footer {
+    font-size: 14px;
+    margin-top: 150px;
+    padding-bottom: 20px;
+}
